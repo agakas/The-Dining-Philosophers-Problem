@@ -6,6 +6,11 @@
 #include <chrono>
 
 int main() {
+
+    #ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);  // Кодовая страница для вывода на Windows
+    #endif
+
     const size_t philosophers_count = 5;
 
     Table table(philosophers_count);

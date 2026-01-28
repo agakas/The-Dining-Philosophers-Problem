@@ -55,11 +55,12 @@ cmake --build build/macos
 ### Windows
 
 ```powershell
-cmake -S . -B build/windows
-cmake --build build/windows --config Release
+cmake -S . -B build -G "Visual Studio 18 2026" -A x64
+cmake --build build --config Release
 .\build\windows\Release\philosophers.exe
 ```
 
+Для сборки под Windows были необходимы инструменты разработчика Microsoft Visual Studio 2026
 ---
 
 ## Логирование
