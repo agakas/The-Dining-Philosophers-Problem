@@ -45,9 +45,9 @@
 ### macOS (мастер-система)
 
 ```bash
-cmake -S . -B build/macos
-cmake --build build/macos
-./build/macos/philosophers
+cmake -S . -B build
+cmake --build build
+./build/philosophers
 ```
 
 ---
@@ -57,7 +57,7 @@ cmake --build build/macos
 ```powershell
 cmake -S . -B build -G "Visual Studio 18 2026" -A x64
 cmake --build build --config Release
-.\build\windows\Release\philosophers.exe
+.\build\Release\philosophers.exe
 ```
 
 Для сборки под Windows были необходимы инструменты разработчика Microsoft Visual Studio 2026.
