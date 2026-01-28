@@ -7,15 +7,15 @@
 Philosopher::Philosopher(size_t id, Table& table): id_(id), table_(table) {}
 
 void Philosopher::think() {
-    Logger::instance().log(id_, "начал думать");
+    Logger::instance().log(id_, "began to think");
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    Logger::instance().log(id_, "закончил думать");
+    Logger::instance().log(id_, "finished thinking");
 }
 
 void Philosopher::eat() {
-    Logger::instance().log(id_, "начал есть");
+    Logger::instance().log(id_, "began to eat");
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    Logger::instance().log(id_, "закончил есть");
+    Logger::instance().log(id_, "finished eating");
 }
 
 void Philosopher::dine() {

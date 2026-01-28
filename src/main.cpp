@@ -4,8 +4,10 @@
 #include <vector>
 #include <thread>
 #include <chrono>
+#include <iostream>
 
 int main() {
+
     const size_t philosophers_count = 5;
 
     Table table(philosophers_count);
@@ -34,6 +36,9 @@ int main() {
     for (auto& t : threads) {
         t.join();
     }
+
+    std::cout << "Press Enter to Exit";
+    std::cin.get();  //Чтобы консоль не выключалась сразу
 
     return 0;
 }

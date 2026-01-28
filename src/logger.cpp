@@ -27,6 +27,6 @@ void Logger::log(size_t philosopher_id, const std::string& action) {
               << std::setw(2) << std::setfill('0') << tm.tm_sec << ":"
               << std::setw(3) << std::setfill('0') << ms.count()
               << "] "
-              << "Философ " << philosopher_id << " " << action
+              << "Philosopher " << philosopher_id + 1 << " " << action
               << std::endl;
 }
