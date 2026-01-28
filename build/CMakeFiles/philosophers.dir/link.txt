@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/philosophers.dir/src/main.cpp.o CMakeFiles/philosophers.dir/src/table.cpp.o CMakeFiles/philosophers.dir/src/philosopher.cpp.o -o philosophers
