@@ -4,6 +4,7 @@
 #include <vector>
 #include <thread>
 #include <chrono>
+#include <iostream>
 
 int main() {
 
@@ -35,6 +36,8 @@ int main() {
     for (auto& t : threads) {
         t.join();
     }
+
+    std::cin.get();  //Чтобы консоль не выключалась сразу
 
     return 0;
 }
