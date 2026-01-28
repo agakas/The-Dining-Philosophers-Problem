@@ -1,7 +1,3 @@
-#ifdef _WIN32
-#include <locale.h>
-#endif
-
 #include "table.h"
 #include "philosopher.h"
 
@@ -10,10 +6,6 @@
 #include <chrono>
 
 int main() {
-
-    #ifdef _WIN32
-    setlocale(LC_ALL, "Russian");  //Решение проблемы вывода на Windows
-    #endif
 
     const size_t philosophers_count = 5;
 
