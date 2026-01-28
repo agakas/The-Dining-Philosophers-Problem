@@ -9,6 +9,7 @@ add_executable(philosophers
     src/main.cpp
     src/table.cpp
     src/philosopher.cpp
+    src/logger.cpp
 )
 
 target_include_directories(philosophers PRIVATE include)
