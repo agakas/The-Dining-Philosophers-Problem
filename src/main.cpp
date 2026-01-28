@@ -1,3 +1,7 @@
+#ifdef _WIN32
+#include <locale.h>
+#endif
+
 #include "table.h"
 #include "philosopher.h"
 
@@ -8,7 +12,7 @@
 int main() {
 
     #ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8);  // Кодовая страница для вывода на Windows
+    setlocale(LC_ALL, "Russian");  //Решение проблемы вывода на Windows
     #endif
 
     const size_t philosophers_count = 5;

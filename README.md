@@ -60,7 +60,8 @@ cmake --build build --config Release
 .\build\windows\Release\philosophers.exe
 ```
 
-Для сборки под Windows были необходимы инструменты разработчика Microsoft Visual Studio 2026
+Для сборки под Windows были необходимы инструменты разработчика Microsoft Visual Studio 2026.
+
 ---
 
 ## Логирование
