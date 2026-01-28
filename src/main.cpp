@@ -37,6 +37,7 @@ int main() {
         t.join();
     }
 
+    std::cout << "Press Enter to Exit";
     std::cin.get();  //Чтобы консоль не выключалась сразу
 
     return 0;

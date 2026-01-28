@@ -14,7 +14,7 @@ void Table::take_forks(size_t id) {
     forks_[id] = false;
     forks_[(id + 1) % count_] = false;
 
-    Logger::instance().log(id, "взял вилки");
+    Logger::instance().log(id, "took the forks");
 }
 
 
@@ -24,7 +24,7 @@ void Table::put_forks(size_t id) {
         forks_[id] = true;
         forks_[(id + 1) % count_] = true;
     }
-    Logger::instance().log(id, "положил вилки");
+    Logger::instance().log(id, "put down the forks");
     cv_.notify_all();
 }
 
